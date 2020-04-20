@@ -1,0 +1,752 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta name="viewport" content="width=device-width, initial-scale=1" charset="utf-8">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.10/css/all.css" integrity="sha384-+d0P83n9kaQMCwj8F4RJB66tzIwOKmrdb46+porD/OvrJ+37WqIM7UoBtwHO6Nlg" crossorigin="anonymous">
+		<script src="bootstrap/jquery/jquery-1.11.1.min.js"></script>
+		<link rel="stylesheet" rev="stylesheet" href="css/styles.css">
+	</head>
+	<body>
+		<nav class = "navbar navbar-default navbar-static-top visible-lg visible-md myNavbar" role="navigation">
+			<div class = "container">
+				<div class = "navbar-header">
+					<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavBar">
+						<span class = "icon-bar"></span>
+						<span class = "icon-bar"></span>
+						<span class = "icon-bar"></span>
+					</button>
+				</div>
+				<div class="collapse navbar-collapse" id="myNavBar">
+					<ul class = "nav navbar-nav">
+						<li><a href = "#"><span class = "glyphicon glyphicon-home"></span> Home</a></li>
+						<li><a href = "#"><span class = "glyphicon glyphicon-comment"></span> Blog</a></li>
+						<li><a href = "#"><span class = "glyphicon glyphicon-map-marker"></span> Track My Order</a></li>
+						<li><a href = "#"><span class = "glyphicon glyphicon-question-sign"></span> Help</a></li>
+					</ul>
+					<ul class = "nav navbar-nav navbar-right">
+						<li><a href="#" data-toggle="modal" data-target="#loginModal"><span class = "glyphicon glyphicon-log-in"></span> Login</a></li>
+						<li><a href="#"><span class = "glyphicon glyphicon-th-list"></span> My Wishlist</a></li>
+						<li><a href="#"><span class = "glyphicon glyphicon-user"></span> My Account</a></li>
+						<li><a href="#"><span class = "glyphicon glyphicon-shopping-cart"></span> My Kart <span class = "caret"></span></a></li>
+					</ul>
+				</div>
+			</div>
+		</nav>
+
+		<div class = "container text-center logo">
+			<div class = "row">
+				<img src = "Images/logo.png" class = "img-responsive pull-left col-lg-4 col-md-4 col-xs-12"/>
+				<div class = "col-lg-4 col-lg-push-3 col-md-4 col-md-push-3 visible-lg visible-md searchInp">
+					<div class = "input-group">
+						<input type = "text" class = "form-control txtSearch" placeholder = "Find Anything from your home...">
+						<span class = "input-group-btn">
+							<button class = "btn btn-secondary btnSearch"><i class="glyphicon glyphicon-search"></i></button>
+						</span>
+					</div>
+				</div>
+				<img class = "img-responsive visible-lg visible-md col-lg-1 col-lg-push-3 col-md-1 col-md-push-3 imgFlip" src = "Images/shop.png" alt="Shopping Kart">
+			</div>
+		</div>
+
+		<nav class="navbar navbar-default visible-lg visible-md position-sticky navSec">
+				<div class="collapse navbar-collapse js-navbar-collapse">
+					<div class = "container">
+						<div class="nav navbar-nav col-lg-12 col-md-12">
+							<li class = "dropdown mega-dropdown col-lg-2 col-md-2">
+								<a href="#" class="dropdown-toggle active option1" data-toggle="dropdown"><strong>HOME</strong></a>
+							</li>
+							<li class = "dropdown mega-dropdown col-lg-2 col-md-2">
+								<a href="#" class="dropdown-toggle option1" data-toggle="dropdown"><strong>ACCENT <span class = "caret"></span></strong></a>
+								<ul class = "dropdown-menu mega-dropdown-menu">
+									<li class = "col-sm-6">
+										<li class = "dropdown-header"><strong>Accents and Home Decors</strong></li>
+										<ul class = "col-sm-push-1">
+											<a href="#">Accent Tables</a><br/>
+											<a href="#">Nesting Tabless</a><br/>
+											<a href="#">Benches</a><br/>
+											<a href="#">Pedestrals</a><br/>
+											<a href="#">Wall Mount</a><br/>
+										</ul>
+									</li>
+								</ul>
+							</li>
+							<li class = "dropdown mega-dropdown col-lg-2 col-md-2">
+								<a href="#" class="dropdown-toggle option1" data-toggle="dropdown"><strong>BEDROOM <span class = "caret"></span></strong></a>
+								<ul class = "dropdown-menu mega-dropdown-menu">
+									<li class = "col-sm-6">
+										<li class = "dropdown-header"><strong>Bedroom Furniture</strong></li>
+										<ul class = "col-sm-2">
+											<a href="#">Headboards</a><br/>
+											<a href="#">Trundle Beds</a><br/>
+											<a href="#">Dressers</a><br/>
+											<a href="#">Nightstands</a><br/>
+											<a href="#">Mattresses</a><br/>
+											<a href="#">Platform Beds</a>
+										</ul>
+										<ul class = "col-sm-2">
+											<a href="#">Cheval Mirrors</a><br/>
+											<a href="#">Metal Beds</a><br/>
+											<a href="#">Jewelry Boxes</a><br/>
+											<a href="#">Chesses</a><br/>
+											<a href="#">Memory Foam Mattresses</a><br/>
+											<a href="#">Vanity Table Sets</a><br/>
+										</ul>
+									</li>
+								</ul>
+							</li>
+							<li class = "dropdown mega-dropdown col-lg-3 col-md-3">
+								<a href="#" class="dropdown-toggle option1" data-toggle="dropdown"><strong>DINING & LIVING ROOM <span class = "caret"></span></strong></a>
+								<ul class = "dropdown-menu mega-dropdown-menu">
+									<li class = "col-sm-6">
+										<li class = "dropdown-header"><strong>Dining and Living Room Furniture</strong></li>
+										<ul class = "col-sm-2">
+											<a href="#">Bar Stools</a><br/>
+											<a href="#">Consoles</a><br/>
+											<a href="#">Ottoman</a><br/>
+											<a href="#">Accent Chairs</a><br/>
+											<a href="#">Curio Cabinets</a><br/>
+											<a href="#">Sofa, Sectional Sofa</a><br/>
+										</ul>
+										<ul class = "col-sm-3">
+											<a href="#">Dining Room Chairs</a><br/>
+											<a href="#">Desk and Storage</a><br/>
+											<a href="#">Kitchen Furniture</a><br/>
+											<a href="#">Cocktail,End,Sofa Tables</a><br/>
+											<a href="#">Fireplaces</a><br/>
+										</ul>
+									</li>
+								</ul>
+							</li>
+							<li class = "dropdown mega-dropdown col-lg-3 col-md-3">
+								<a href="#" class="dropdown-toggle option1" data-toggle="dropdown"><strong>KIDS & ENTERTAINMENT <span class = "caret"></span></strong></a>
+								<ul class = "dropdown-menu mega-dropdown-menu">
+									<li class = "dropdown-header"><strong>Kids and Entertainment Collections</strong></li>
+									<li class = "col-sm-6">
+										<ul>
+											<a href="#">Stand</a><br/>
+											<a href="#">Media Storage</a><br/>
+											<a href="#">Kids Bunk Beds</a><br/>
+											<a href="#">Loft Bunk Beds</a><br/>
+										</ul>
+									</li>
+								</ul>
+							</li>
+						</div>
+					</div>
+				</div>
+			</nav>
+
+			<div class = "visible-xs visible-sm">
+				<ul class="list-inline text-center nav2">
+					<li class = "dropdown">
+						<a href="#" class = "dropdown-toggle" data-toggle="dropdown" id = "dropdownLink"><span class = "glyphicon glyphicon-th-list"></span> Menu</a>
+						<ul class = "dropdown-menu" aria-labelledby="dropdownLink">
+							<li><a class = "dropdown-item">ACCENTS</a></li>
+							<li><a class = "dropdown-item">BEDROOM</a></li>
+							<li><a class = "dropdown-item">DINING ROOM</a></li>
+							<li><a class = "dropdown-item">LIVING ROOM</a></li>
+							<li><a class = "dropdown-item">KIDS & ENTERTAINMENT</a></li>
+						</ul>
+					</li>
+					<li><a href="#"><span class = "glyphicon glyphicon-search"></span></a></li>
+					<li class = "dropdown">
+						<a href="#" class = "dropdown-toggle" data-toggle="dropdown" id = "dropdownLink"><span class = "glyphicon glyphicon-th-list"></span></a>
+						<ul class = "dropdown-menu" aria-labelledby="dropdownLink">
+							<li><a class = "dropdown-item"><span class = "glyphicon glyphicon-home"></span> Home</a></li>
+							<li><a class = "dropdown-item"><span class = "glyphicon glyphicon-comment"></span> Blog</a></li>
+							<li><a class = "dropdown-item"><span class = "glyphicon glyphicon-map-marker"></span> Track My Order</a></li>
+							<li><a class = "dropdown-item"><span class = "glyphicon glyphicon-question-sign"></span> Help</a></li>
+							<li><a class = "dropdown-item"><span class = "glyphicon glyphicon-log-in"></span> Login</a></li>
+							<li><a class = "dropdown-item"><span class = "glyphicon glyphicon-th-list"></span> My Wishlist</a></a></li>
+							<li><a class = "dropdown-item"><span class = "glyphicon glyphicon-user"></span> My Account</a></li>
+						</ul>
+					</li>
+					<li><a href="#"><span class = "glyphicon glyphicon-shopping-cart"></span></a></li>
+				</ul>
+			</div>
+
+
+			<div class="container-fluid breadcrumbCon">
+				<div class="container">
+					<div class="pull-right breadcrumbLinks visible-md visible-lg">
+   						<a href="#" style="color:black;"><i class="glyphicon glyphicon-envelope" style="color:#0e9de5;"></i> Email a friend</a>&emsp;
+   						<a href="#" style="color:black;"><i class="glyphicon glyphicon-print" style="color:#0e9de5;"></i> Print</a>&emsp;
+   						<a href="#" style="color:black;"><i class="glyphicon glyphicon-bookmark" style="color:#0e9de5;"></i> Bookmark</a>
+   					</div>
+					<ol class="breadcrumb">
+						<li class="breadcrumb-item"><a href="#"><i class="glyphicon glyphicon-home" style="color:#0e9de5"></i>&emsp;</li>
+						<li class="breadcrumb-item"><a href="#">Electronics</a></li>
+						<li class="breadcrumb-item"><a href="#">Television</a></li>
+						<li class="breadcrumb-item"><a href="#">OLED TV</a></li>
+						<li class="breadcrumb-item active">Accent</li>
+					</ol>
+				</div>
+			</div>
+
+			<div class="container-fluid visible-sm visible-xs">
+				<div class="container">
+					<div class="breadcrumbLinksSmal">
+						<a href="#" style="color:black;"><i class="glyphicon glyphicon-envelope" style="color:#0e9de5;"></i> Email a friend</a>&emsp;
+						<a href="#" style="color:black;"><i class="glyphicon glyphicon-print" style="color:#0e9de5;"></i> Print</a>&emsp;
+						<a href="#" style="color:black;"><i class="glyphicon glyphicon-bookmark" style="color:#0e9de5;"></i> Bookmark</a>
+					</div>
+				</div>
+			</div>
+
+			<!--main_carousel-->
+			<div class="container-fluid">
+				<div class="carousel slide" data-interval="false" id="carouselItem">
+					<!--controls-->
+					<div class="controlsBlock pull-right visible-lg">
+						<a class="left carousel-control itemName" href="#carouselItem" role="button" data-slide="prev">
+							<span class="fa fa-chevron-circle-left itemNameL" aria-hidden="true"></span>
+							<span class="sr-only">Previous</span>
+						</a>
+						<a class="right carousel-control itemName" href="#carouselItem" role="button" data-slide="next">
+							<span class="fa fa-chevron-circle-right itemNameR" aria-hidden="true"></span>
+							<span class="sr-only">Next</span>
+						</a>
+					</div>
+
+					<div class="row">
+						<div class="carousel-inner">
+							<div class="item active">
+								<div class="container">
+									<div class="title col-lg-12">
+										<h3 class="itemTitle">Carmina 2-pc Sofa Collection Cushion in Mocha Microfiber and Espresso Legs</h3>
+										<span>Item # 609742 Model # FCS60427</span>
+									</div>
+
+									<div class="buttonLinks col-lg-12">
+										<button class="btn btn-primary"><i class="fab fa-facebook-square"></i>&emsp;Facebook</button>
+										<button class="btn btn-info"><i class="fab fa-twitter"></i>&emsp;Twitter</button>
+										<button class="btn btn-danger"><i class="fab fa-google-plus-square"></i>&emsp;Google+</button>
+										<button class="btn btn-danger" style="margin-right: 20px;"><i class="fab fa-pinterest"></i>&emsp;Pinterest</button>
+
+										<img src="Images/star.png"><img src="Images/star.png"><img src="Images/star.png"><img src="Images/star2.png"><img src="Images/star3.png">
+
+										<a href="#" style="margin-left:20px;">(2 Reviews)</a>
+									</div>
+
+									<div class="productView col-lg-12">
+										<div class="sideItem col-lg-2 visible-lg visible-md">
+											<img src="Images/itemPrev.png" class="img-responsive col-lg-12">
+											<img src="Images/itemPrev1.png" class="img-responsive col-lg-12">
+											<img src="Images/itemPrev2.png" class="img-responsive col-lg-12">
+											<img src="Images/itemPrev3.png" class="img-responsive col-lg-12">
+										</div>
+
+										<div class="ImgPreview col-lg-5">
+											<img src="Images/sofa.png" class="img-responsive">
+										</div>
+
+										<div class="sideItem col-lg-12 col-sm-12 col-xs-12 visible-xs visible-sm">
+											<img src="Images/itemPrev.png" class="img-responsive col-xs-3">
+											<img src="Images/itemPrev1.png" class="img-responsive col-xs-3">
+											<img src="Images/itemPrev2.png" class="img-responsive col-xs-3">
+											<img src="Images/itemPrev3.png" class="img-responsive col-xs-3">
+										</div>
+
+										<div class="ImgDesc col-lg-5">
+											<span class="price"><sup>$</sup>898.00</span>
+											<span><strong class="was">Was <strike>$1000</strike></strong></span>
+											<span>You Save <strong style="color:red;">61%</strong></span>
+
+											<p class="desc">If you've been looking for the perfect sofa and loveseat set, the search is over. This sofa set has the perfect combination of great look and feel at the right price. This sofa and loveseat feature a luscious mocha microfiber that you will sink right into.</p>
+											<div class="prodInfo">
+												<p><strong>Product Information:</strong></p>
+
+												<li class="col-lg-6">10+ in Stock</li>
+												<li class="col-lg-6">Overall Product Weight: Chair: 30lbs</li>
+												<li class="col-lg-6">Overall: 26" H x 21.75" W x 15.25" D</li>
+												<li class="col-lg-6">Lorem Ipsum dolor</li>
+											</div>
+											<div class="buyNow col-lg-12">
+												<div class="col-lg-9">
+													<p class="text-left">Buy now for 30 days of <strong style="color:yellow;">FREE SHIPPING</strong></p>
+													<span class="text-left">Get it by <strong>Thurs, June 30!</strong></span>
+												</div>
+												<span class="fa fa-shopping-cart visible-lg visible-md" style="font-size: 50px;"></span>
+											</div>
+
+											<div class="buyerProtect col-lg-12">
+												<img src="Images/100per.png" class="col-lg-3 col-xs-2">
+												<p class="col-lg-9"><strong>100% BUYER PROTECTION</strong></p>
+
+												<div class="col-lg-2 col-xs-3 promote">
+													<a href="#">Genuine Product</a>
+												</div>
+												<div class="col-lg-2 col-xs-3 promote">
+													<a href="#">Secure Payment</a>
+												</div>
+												<div class="col-lg-2 col-xs-3 promote">
+													<a href="#">Frequently Ask</a>
+												</div>
+												<div class="col-lg-3 col-xs-3 promote">
+													<a href="#">Ask a question</a>
+												</div>
+											</div>
+
+											<div class="quantity col-lg-12 col-xs-12">
+												<div class="input-group spinner col-lg-5">
+													<input type="text" class="form-control input-md" value="1" min="1" max="5">
+													<div class="input-group-btn-vertical">
+														<button class="btn btn-default btn-sm" type="button"><i class="fa fa-caret-up"></i></button>
+														<button class="btn btn-default btn-sm" type="button"><i class="fa fa-caret-down"></i></button>
+													</div>
+												</div>
+											</div>
+
+											<div class="buttonAdd col-lg-12 col-xs-12">
+												<button class="col-lg-5 col-xs-5 btn-lg btn btn-basic toCart"><i class="fa fa-shopping-cart"></i><strong> ADD TO CART</strong></button>
+												<button class="col-lg-5 col-xs-5 btn-lg btn btn-basic toWish"><i class="far fa-star"></i><strong> ADD TO WISHLIST</strong></button>
+											</div>
+										</div>
+
+										<div class="itemTab col-lg-12 col-xs-12 visible-md visible-lg">
+											<ul class="nav nav-pills">
+												<li class="active"><a href="#">Description</a></li>
+												<li><a href="#">Details</a></li>
+												<li><a href="#">Shipping</a></li>
+												<li><a href="#">Warranty</a></li>
+												<li><a href="#">Tags</a></li>
+												<li><a href="#">Reviews</a></li>
+											</ul>
+										</div>
+									</div>
+								</div>
+
+								<div class="container-fluid visible-sm visible-xs">
+									<div class="container AboutDesc">
+										<div class="panel-group">
+											<div class="panel panel-default">
+												<div class="panel-heading">
+													<h4 class="panel-title">
+														<a href="#collapseDesc" data-toggle="collapse">Description</a>
+													</h4>
+												</div>
+												<div class="panel-collapse collapse out" id="collapseDesc">
+													<div class="panel-body">
+														<span>Make a nice addition to the patio decor with the Brayden Studio Largo Deep Seating Group. It has a modern style that adds to its overall style-quotient. Made from steel, the frame of this seating group provides durability and sturdiness. The woven resin wicker material adds to the aesthetic appeal of the seating group. This set is available in an elegant brown finish that enhances the look of the patio decor. A loveseat, two arm chairs, and a cocktail table make up this set, easily accommodating a family of four. Cushions are included to provide comfort to the user. The deep seating design enhances the level of comfort. The weather- and UV-resistant features protect the seating group when it is placed outside. Being fade-resistant, it retains its original look for a long time. The arms of the chairs provide support, enhancing the ergonomic design of the seating group. The Largo deep seating group by Brayden Studio can be ideally used for gazebos and pergolas. The seating group can be easily wiped clean using a soft dry cloth for easy maintenance. This ensures easy maintenance and keeps the set looking good for a long time.</span>
+													</div>
+												</div>
+											</div>
+
+											<div class="panel panel-default">
+												<div class="panel-heading">
+													<h4 class="panel-title">
+														<a href="#collapseFeat" data-toggle="collapse">Features</a>
+													</h4>
+												</div>
+												<div class="panel-collapse collapse out" id="collapseFeat">
+													<div class="panel-body">
+														<table class="table table-striped table-bordered col-lg-12">
+															<tbody>
+																<tr>
+																	<td>Subject: Ornamental</td>
+																	<td>Style: Traditional</td>
+																</tr>
+																<tr>
+																	<td>Finish: Bronze/Brown</td>
+																	<td>Distressed: No</td>
+																</tr>
+																<tr>
+																	<td>Handmade: No</td>
+																	<td>Primary Material: Metal</td>
+																</tr>
+																<tr>
+																	<td>Number of Item Included: 1</td>
+																	<td>Non-Toxic: Yes</td>
+																</tr>
+																<tr>
+																	<td>Wall Mounting Hardware: No</td>
+																	<td>Outdoor Use: No</td>
+																</tr>
+																<tr>
+																	<td>Commercial Use: Yes</td>
+																	<td>Country of Manufacture: China</td>
+																</tr>
+															</tbody>
+														</table>
+													</div>
+												</div>
+											</div>
+
+											<div class="panel panel-default">
+												<div class="panel-heading">
+													<h4 class="panel-title">
+														<a href="#collapseManu" data-toggle="collapse">About the Manufacturer</a>
+													</h4>
+												</div>
+												<div class="panel-collapse collapse out" id="collapseManu">
+													<div class="panel-body">
+														<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec nec ultricies quam, quis scelerisque felis. Pellentesque hendrerit turpis justo, ut dictum odio rhoncus sed. Cras aliquet, ipsum sit amet posuere pharetra, nulla lorem pellentesque eros, nec euismod neque sem non velit. Aenean gravida id arcu ac tempus.</p>
+														<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec nec ultricies quam, quis scelerisque felis. Pellentesque hendrerit turpis justo, ut dictum odio rhoncus sed. Cras aliquet, ipsum sit amet posuere pharetra, nulla lorem pellentesque eros, nec euismod neque sem non velit. Aenean gravida id arcu ac tempus.  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec nec ultricies quam, quis scelerisque felis.</p>
+														<p>Pellentesque hendrerit turpis justo, ut dictum odio rhoncus sed. Cras aliquet, ipsum sit amet posuere pharetra, nulla lorem pellentesque eros, nec euismod neque sem non velit. Aenean gravida id arcu ac tempus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec nec ultricies quam, quis scelerisque felis. Pellentesque hendrerit turpis justo, ut dictum odio rhoncus sed.</p>
+													</div>
+												</div>
+											</div>
+
+										</div>
+									</div>
+								</div>
+								<div class="container-fluid aboutItem">
+									<div class="container">
+										<div class="longDesc col-lg-7 col-xs-12 visible-lg visible-md">
+											<h3>Description</h3>
+											<span>Make a nice addition to the patio decor with the Brayden Studio Largo Deep Seating Group. It has a modern style that adds to its overall style-quotient. Made from steel, the frame of this seating group provides durability and sturdiness. The woven resin wicker material adds to the aesthetic appeal of the seating group. This set is available in an elegant brown finish that enhances the look of the patio decor. A loveseat, two arm chairs, and a cocktail table make up this set, easily accommodating a family of four. Cushions are included to provide comfort to the user. The deep seating design enhances the level of comfort. The weather- and UV-resistant features protect the seating group when it is placed outside. Being fade-resistant, it retains its original look for a long time. The arms of the chairs provide support, enhancing the ergonomic design of the seating group. The Largo deep seating group by Brayden Studio can be ideally used for gazebos and pergolas. The seating group can be easily wiped clean using a soft dry cloth for easy maintenance. This ensures easy maintenance and keeps the set looking good for a long time.</span>
+
+											<h3>Features</h3>
+
+											<table class="table table-striped table-bordered col-lg-12">
+												<tbody>
+													<tr>
+														<td>Subject: Ornamental</td>
+														<td>Style: Traditional</td>
+													</tr>
+													<tr>
+														<td>Finish: Bronze/Brown</td>
+														<td>Distressed: No</td>
+													</tr>
+													<tr>
+														<td>Handmade: No</td>
+														<td>Primary Material: Metal</td>
+													</tr>
+													<tr>
+														<td>Number of Item Included: 1</td>
+														<td>Non-Toxic: Yes</td>
+													</tr>
+													<tr>
+														<td>Wall Mounting Hardware: No</td>
+														<td>Outdoor Use: No</td>
+													</tr>
+													<tr>
+														<td>Commercial Use: Yes</td>
+														<td>Country of Manufacture: China</td>
+													</tr>
+												</tbody>
+											</table>
+
+											<h3>About the Manufacturer</h3>
+
+											<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec nec ultricies quam, quis scelerisque felis. Pellentesque hendrerit turpis justo, ut dictum odio rhoncus sed. Cras aliquet, ipsum sit amet posuere pharetra, nulla lorem pellentesque eros, nec euismod neque sem non velit. Aenean gravida id arcu ac tempus.</p>
+											<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec nec ultricies quam, quis scelerisque felis. Pellentesque hendrerit turpis justo, ut dictum odio rhoncus sed. Cras aliquet, ipsum sit amet posuere pharetra, nulla lorem pellentesque eros, nec euismod neque sem non velit. Aenean gravida id arcu ac tempus.  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec nec ultricies quam, quis scelerisque felis.</p>
+											<p>Pellentesque hendrerit turpis justo, ut dictum odio rhoncus sed. Cras aliquet, ipsum sit amet posuere pharetra, nulla lorem pellentesque eros, nec euismod neque sem non velit. Aenean gravida id arcu ac tempus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec nec ultricies quam, quis scelerisque felis. Pellentesque hendrerit turpis justo, ut dictum odio rhoncus sed.</p>
+
+										</div>
+
+										<div class="col-lg-1"></div>
+
+										<div class="moreAbout col-lg-4">
+
+											<h3 class="col-xs-12 text-center">More About This Brand</h3>
+
+											<div class="recomend col-lg-12">
+												<div class="recommend2 center-block">
+													<img src="Images/chair.png" class="col-lg-5 center-block img-responsive">
+
+
+													<a href="#" class="col-lg-5">360 Swivel Chair Ottoman Brick Red...</a>
+
+													<div class="col-lg-5 col-xs-12 center-block text-center star">
+														<img src="Images/star.png"><img src="Images/star.png"><img src="Images/star3.png"><img src="Images/star3.png"><img src="Images/star3.png">
+													</div>
+
+													<p class="col-lg-5 text-center col-xs-12 text-center">Price<strong>$400.00</strong></p>
+												</div>
+
+												<div class="recommend2 center-block">
+													<img src="Images/chair.png" class="col-lg-5 center-block img-responsive">
+
+
+													<a href="#" class="col-lg-5">360 Swivel Chair Ottoman Brick Red...</a>
+
+													<div class="col-lg-5 col-xs-12 text-center star">
+														<img src="Images/star.png"><img src="Images/star.png"><img src="Images/star3.png"><img src="Images/star3.png"><img src="Images/star3.png">
+													</div>
+
+													<p class="col-lg-5 text-center">Price<strong>$400.00</strong></p>
+												</div>
+
+												<div class="recommend2 center-block">
+													<img src="Images/chair.png" class="col-lg-5 center-block img-responsive">
+
+
+													<a href="#" class="col-lg-5">360 Swivel Chair Ottoman Brick Red...</a>
+
+													<div class="col-lg-5 star col-xs-12 text-center">
+														<img src="Images/star.png"><img src="Images/star.png"><img src="Images/star3.png"><img src="Images/star3.png"><img src="Images/star3.png">
+													</div>
+
+													<p class="col-lg-5 text-center">Price<strong>$400.00</strong></p>
+												</div>
+											</div>
+
+										</div>
+
+										<div class="col-lg-1"></div>
+
+										<div class="col-lg-4 recent">
+											<h3 class="col-xs-12 text-center">Recent Tips / Brands</h3>
+
+											<div class="tips col-lg-12">
+												<div class="tips2 center-block">
+													<img src="Images/tips.png" class="img-responsive center-block col-xs-12 col-lg-6">
+													<a href="#" class="col-lg-6 col-xs-12"><strong>How to Maintain a Secure and Safe Home for Erderly</strong></a>
+
+													<p class="col-lg-6">Lorem ipsum dolor sit amet, vel vitae constituto ex, eu sum mo...</p>
+												</div>
+
+												<div class="tips2 center-block">
+													<img src="Images/tips.png" class="img-responsive col-lg-6">
+													<a href="#" class="col-lg-6 col-xs-12"><strong>How to Maintain a Secure and Safe Home for Erderly</strong></a>
+
+													<p class="col-lg-6">Lorem ipsum dolor sit amet, vel vitae constituto ex, eu sum mo...</p>
+												</div>
+
+												<div class="tips2 center-block">
+													<img src="Images/tips.png" class="img-responsive col-lg-6">
+													<a href="#" class="col-lg-6 col-xs-12"><strong>How to Maintain a Secure and Safe Home for Erderly</strong></a>
+
+													<p class="col-lg-6">Lorem ipsum dolor sit amet, vel vitae constituto ex, eu sum mo...</p>
+												</div>
+											</div>
+
+										</div>
+
+
+
+
+
+										<div class="col-lg-1"></div>
+
+
+									</div>
+								</div>
+
+								<div class="container-fluid">
+									<div class="container">
+										<h2 class="text-center" style="margin:20px 0;">PEOPLE WHO VIEWED THIS ITEM ALSO VIEWED</h2>
+										<div class = "container linePink"></div>
+										<div class="viewed">
+											<p class="text-center">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec non semper ligula, non fermentum sapien.</p>
+										</div>
+
+										<div class="alsoViewed col-xs-12 col-lg-12">
+											<div class="carousel slide pagination-centered" data-interval="false" id="viewedItem">
+												<div class="carousel-inner">
+													<div class="item active">
+														<div class="itemsViewed col-lg-3 col-xs-12 center-block">
+															<img src="Images/view.png" class="col-lg-12 col-xs-12 img-responsive center-block">
+															<p class="text-left col-lg-12">Powel May Twin Over Full Size Kids Childrens Bunk Bed</p>
+															<div class="col-lg-12 text-center">
+																<img src="Images/star.png"><img src="Images/star.png"><img src="Images/star.png"><img src="Images/star2.png"><img src="Images/star3.png">
+															</div>
+
+															<button class="btn btn-link col-lg-12 col-xs-12">Price <strong>$349.00</strong></button>
+														</div>
+
+														<div class="itemsViewed col-lg-3 col-xs-12">
+															<img src="Images/view1.png" class="col-lg-12 col-xs-12 img-responsive center-block">
+															<p class="text-left col-lg-12">Powel May Twin Over Full Size Kids Childrens Bunk Bed</p>
+															<div class="col-lg-12 text-center">
+																<img src="Images/star.png"><img src="Images/star.png"><img src="Images/star.png"><img src="Images/star2.png"><img src="Images/star3.png">
+															</div>
+
+															<button class="btn btn-link col-lg-12 col-xs-12">Price <strong>$349.00</strong></button>
+														</div>
+
+														<div class="itemsViewed col-lg-3 col-xs-12">
+															<img src="Images/view2.png" class="col-lg-12 col-xs-12 img-responsive center-block">
+															<p class="text-left col-lg-12">Powel May Twin Over Full Size Kids Childrens Bunk Bed</p>
+															<div class="col-lg-12 text-center">
+																<img src="Images/star.png"><img src="Images/star.png"><img src="Images/star.png"><img src="Images/star2.png"><img src="Images/star3.png">
+															</div>
+
+															<button class="btn btn-link col-lg-12 col-xs-12">Price <strong>$349.00</strong></button>
+														</div>
+
+
+														<div class="itemsViewed col-lg-3 col-xs-12">
+															<img src="Images/chair.png" class="col-lg-12 col-xs-12 img-responsive center-block">
+															<p class="text-left col-lg-12">Powel May Twin Over Full Size Kids Childrens Bunk Bed</p>
+															<div class="col-lg-12 text-center">
+																<img src="Images/star.png"><img src="Images/star.png"><img src="Images/star.png"><img src="Images/star2.png"><img src="Images/star3.png">
+															</div>
+
+															<button class="btn btn-link col-lg-12 col-xs-12">Price <strong>$349.00</strong></button>
+														</div>
+													</div>
+												</div><!--carousel-inner-->
+											</div>
+										</div>
+
+									</div>
+
+								</div>
+							</div>
+							<div class="item">
+								<div class="container" style="margin-top: 30px;">
+									<div class="progress">
+										<div class="progress-bar progress-bar-striped active" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="width:40%;">Loading.. Please Wait</div>
+									</div>
+								</div>
+					 		</div>
+					 	</div>
+					</div>
+				</div>
+			</div>
+			<img src = "Images/palace.png" class = "center-block img-responsive">
+			<div class="container-fluid newsCon">
+				<div class="container">
+					<div class="row">
+						<span class="far fa-envelope col-lg-1 col-xs-3" style="font-size: 4em;color: white;"></span>
+						<h3 style="color: white;" class="col-lg-5 col-xs-9">SIGN UP FOR OUR NEWSLETTER:</h3>
+						<div class="col-lg-1"></div>
+						<input type="Email" class="col-lg-3 col-xs-9 input-md email">
+						<button type="button" class = "col-lg-1 col-xs-3 btn btn-warning btnSubs" ><strong>SUBSCRIBE</strong></button>
+					</div>
+				</div>
+			</div>
+			<div class = "container visible-lg visible-md">
+				<div class = "container foot1">
+					<div class = "row">
+						<div class = "col-lg-3 col-md-3">
+							<img src = "Images/logo.png" class = "img-responsive">
+							<p class = "text-left" style="font-size:0.9em;line-height:1.5">At Home Buys Plus, we're not just about selling Furniture! Sure, as the Florida’s number 1 Furniture store we do have one of the most exclusive collections of Furniture styles available online, but with our wide selection of products from mattresses to Fire Places, we cater to your entire furniture needs – and all at great value bargain prices!</p>
+						</div>
+						<div class = "col-lg-3 col-md-3">
+							<strong style = "font-size:15px;color:#0e9de5;">&emsp;&emsp;SHOP BY</strong>
+							<ul style="font-size:12px;line-height:1.5">
+								<li><a style = "color:black;">Accents</a></li>
+								<li><a style = "color:black;">Bedroom</a></li>
+								<li><a style = "color:black;">Dining & Living Room</a></li>
+								<li><a style = "color:black;">Kids & Entertainment</a></li>
+							</ul>
+						</div>
+						<div class = "col-lg-3 col-md-3">
+						<strong style = "font-size:15px;color:#0e9de5;">&emsp;&emsp;INFORMATION & SUPPORT</strong>
+							<ul style="font-size:12px;line-height:1.5">
+								<li><a style = "color:black;">Delivery Detail</a></li>
+								<li><a style = "color:black;">Return Policy</a></li>
+								<li><a style = "color:black;">About Us</a></li>
+								<li><a style = "color:black;">Terms & Condition</a></li>
+								<li><a style = "color:black;">My Account</a></li>
+								<li><a style = "color:black;">FAQ</a></li>
+								<li><a style = "color:black;">Privacy Policy</a></li>
+							</ul>
+						</div>
+						<div class = "col-lg-3 col-md-3">
+						<strong style = "font-size:15px;color:#0e9de5;margin-bottom:20px;">&emsp;&emsp;CUSTOMER SERVICE</strong>
+							<ul style="font-size:12px;line-height:1.5">
+								<li><a style = "color:black;">About Us</a></li>
+								<li><a style = "color:black;">Contact Us</a></li>
+								<li><a style = "color:black;">Delivery</a></li>
+								<li><a style = "color:black;">Sign up for Emails</a></li>
+								<li><a style = "color:black;">Deal Match</a></li>
+								<li><a style = "color:black;">Financing</a></li>
+								<li><a style = "color:black;">FAQs</a></li>
+								<li><a style = "color:black;">Orders & Returns</a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+
+
+			<div id = "accordion" class = "container-fluid visible-xs visible-sm">
+				<div class = "panel panel-default">
+					<div class = "panel-body">
+						<img src = "Images/logo.png" class = "img-responsive center-block">
+						<p>At Home Buys Plus, we're not just about selling Furniture! Sure, as the Florida’s number 1 Furniture store we do have one of the most exclusive collections of Furniture styles available online, but with our wide selection of products from mattresses to Fire Places, we cater to your entire furniture needs – and all at great value bargain prices!</p>
+
+						<div class = "panel panel-default coll">
+							<div class = "panel-heading">
+								<h4 class = "panel-title">
+									<a data-toggle="collapse" data-parent="#accordion" href="#collapse1">SHOP BY</a>
+								</h4>
+							</div>
+							<div id = "collapse1" class = "panel-collapse collapse out">
+								<div class = "panel-body">
+									<ul style="font-size:12px;line-height:1.5">
+										<li><a style = "color:black;">Accents</a></li>
+										<li><a style = "color:black;">Bedroom</a></li>
+										<li><a style = "color:black;">Dining & Living Room</a></li>
+										<li><a style = "color:black;">Kids & Entertainment</a></li>
+									</ul>
+								</div>
+							</div>
+						</div>
+						<div class = "panel panel-default coll">
+							<div class = "panel-heading">
+								<h4 class = "panel-title">
+									<a data-toggle="collapse" data-parent="#accordion" href="#collapse2">INFORMATION & SUPPORT</a>
+								</h4>
+							</div>
+							<div id = "collapse2" class = "panel-collapse collapse out">
+								<div class = "panel-body">
+									<ul style="font-size:12px;line-height:1.5">
+										<li><a style = "color:black;">Delivery Detail</a></li>
+										<li><a style = "color:black;">Return Policy</a></li>
+										<li><a style = "color:black;">About Us</a></li>
+										<li><a style = "color:black;">Terms & Condition</a></li>
+										<li><a style = "color:black;">My Account</a></li>
+										<li><a style = "color:black;">FAQ</a></li>
+										<li><a style = "color:black;">Privacy Policy</a></li>
+									</ul>
+								</div>
+							</div>
+						</div>
+						<div class = "panel panel-default coll">
+							<div class = "panel-heading">
+								<h4 class = "panel-title">
+									<a data-toggle="collapse" data-parent="#accordion" href="#collapse3">CUSTOMER SERVICE</a>
+								</h4>
+							</div>
+							<div id = "collapse3" class = "panel-collapse collapse out">
+								<div class = "panel-body">
+									<ul style="font-size:12px;line-height:1.5">
+										<li><a style = "color:black;">About Us</a></li>
+										<li><a style = "color:black;">Contact Us</a></li>
+										<li><a style = "color:black;">Delivery</a></li>
+										<li><a style = "color:black;">Sign up for Emails</a></li>
+										<li><a style = "color:black;">Deal Match</a></li>
+										<li><a style = "color:black;">Financing</a></li>
+										<li><a style = "color:black;">FAQs</a></li>
+										<li><a style = "color:black;">Orders & Returns</a></li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class = "container-fluid foot2">
+				<div class = "container">
+					<p class = "pull-left" style="margin-top:13px;color:white;">&copy;2016 KingsGreatBuysPlus. All rights reserved.</p>
+					<a><img src = "Images/fb.png" class="img-responsive pull-right" class = "fb"></img></a>
+					<a><img src = "Images/twitter.png" class="img-responsive pull-right" class = "twitter"></img></a>
+					<a><img src = "Images/youtube.png" class="img-responsive pull-right" class = "yout"></img></a>
+				</div>
+			</div>
+	</body>
+	<script>
+
+	(function ($) {
+		var spin = 0;
+		var spinnerVal = "Quantity: " + spin;
+	  $('.spinner .btn:first-of-type').on('click', function() {
+	    $('.spinner input').val( parseInt($('.spinner input').val(), 10) + 1);
+
+	  });
+	  $('.spinner .btn:last-of-type').on('click', function() {
+	    $('.spinner input').val( parseInt($('.spinner input').val(), 10) - 1);
+	  });
+	})(jQuery);
+
+	</script>
+</html>
